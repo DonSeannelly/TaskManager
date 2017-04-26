@@ -1,6 +1,6 @@
 import { TaskManagerPage } from './app.po';
 
-describe('task-manager App', function() {
+describe('task-manager App', () => {
   let page: TaskManagerPage;
 
   beforeEach(() => {
