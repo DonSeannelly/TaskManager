@@ -1,0 +1,7 @@
+<div>
+    <ul>
+        <li *ngFor="let task of tasks">
+            <button  *ngIF="task.active" class="task" id={{task.status}} (click)="displayInfo()">{{task.name}}, {{task.workers[0]}}</button>
+        </li>
+    </ul>
+</div>
