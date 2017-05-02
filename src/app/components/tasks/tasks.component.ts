@@ -10,7 +10,7 @@ import { MdRadioModule } from '@angular/material';
 export class TasksComponent implements OnInit {
   tasks = []
 
-  //These are also for testing purposes. They are used 
+  //These are also for testing purposes. They are used to check for peopple working on the tasks
   users = ["Lydia","Nick","Adam"]
   users2 = []
   
@@ -64,5 +64,4 @@ export class TasksComponent implements OnInit {
   displayInfo(){
     alert("Whatever");
   }
-
 }
