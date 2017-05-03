@@ -1,0 +1,31 @@
+.task{
+    background-image: url("./images/button.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px 75px;
+    border-radius: 20px;
+    height: 75px;
+    width: 150px;
+}
+.task:hover{
+    background-image: url("./images/hovered.png");
+}
+
+.task:active{
+    background-image: url('./images/clicked.png');
+    background-size: 150px 80px;
+}
+
+li{
+    list-style-type: none;
+}
+
+#active{
+    background-color: green;
+}
+#inactive{
+    background-color: gray;
+}
+#bugged{
+    background-color: red;
+}
