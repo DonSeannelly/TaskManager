@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Hello world!';
+  activeTasks = []
+  
+  constructor(){
+    this.activeTasks[0] = {
+      name: "temp",
+      status:"active"
+    };
+  }
+
+  // we are looking to read in data about tasks in this component
 }

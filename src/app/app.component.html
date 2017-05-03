@@ -4,16 +4,14 @@
 
   <div id="left">
     <h1>Weekly</h1>
-    <h2>dfafdd</h2>
-    <h2>dasdaf</h2>
 
   </div>
   <div id="middle">
     <h1>Inactive</h1>
-
+    <app-tasks></app-tasks>
   </div>
   <div id="right">
     <h1>Active</h1>
-
+    <app-tasks *ngFor ="let task of activeTasks" [status]=task.status [name]=task.name></app-tasks>
   </div>
 
