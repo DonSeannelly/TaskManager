@@ -1,0 +1,21 @@
+.topNav{
+    background-color:#333;
+    overflow:hidden;
+}
+
+#left{
+    width:33%;
+    float:left;
+    background-color:red;
+}
+
+#middle{
+    width:33%;
+    background-color:yellow;
+    float:left;
+}
+#right{
+    width:33%;
+    background-color:blue;
+    float:left;
+}
