@@ -1,1 +1,19 @@
 <button class="task" id={{status}} (click)="displayInfo()">{{name}}</button>
+<!-- The proceeding code is used to set up an angular model that can be used to update an object in the task component.
+    said object will be passed to an api route which will mutate database records. While updating the database, this will
+    also keep the model up to date so that the data displayed is updated instantaneously while it is being updated in the
+    database
+ -->
+<div class="form-container">
+    <form [formGroup]="form" class="form-horizontal" (ngSubmit)="save()">
+        <fieldset>
+            <div class="form-group">
+                <input [(ngModel)]="task.status">
+            </div>
+            <div class="form-group">
+                <input [(ngModel)]="task.status">
+            </div>
+            <button type="submit">Save Task</button>
+        </fieldset>
+    </form>
+</div>
