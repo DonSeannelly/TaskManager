@@ -1,5 +1,5 @@
 import {Component, OnInit, Input} from '@angular/core';
-import {FormGroup, FormBuilder} from '@angular/forms';
+import {FormGroup, FormBuilder, ReactiveFormsModule} from '@angular/forms';
 import {TaskService} from './tasks.service';
 @Component({
     selector: 'app-tasks',
@@ -7,9 +7,7 @@ import {TaskService} from './tasks.service';
     styleUrls: ['./tasks.component.css']
 })
 export class TasksComponent implements OnInit {
-    @Input() status: string;
-    @Input() name: string;
-    task;
+    @Input() task;
     // TODO formGroup is used with two way data binding. You bind to an object which is represented in a model (see html).
     // Please check it out. Consider looking into form validation.
     form: FormGroup;
@@ -41,16 +39,16 @@ export class TasksComponent implements OnInit {
         //   }
         // }
 
-        // we are looking to update data from a form in this component
+        // we are looking to update data from a form in this component  
     }
 
     ngOnInit() {
     }
-
+    
 
     //The method is ran after the task is clicked.
     displayInfo() {
-        alert("Whatever");
+        document.getElementById(this.task.id).style.display = "block";
     }
 
     save() {

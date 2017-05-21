@@ -14,7 +14,7 @@ export class TaskService
 
     saveTasks(task: any)
     {
-        // TODO save the recieved task to the library. Consideration, if the task has an ID use an update query
-        // instead of create
+        alert(task.name +" "+task.status)
+        document.getElementById(task.id).style.display='none';
     }
 }

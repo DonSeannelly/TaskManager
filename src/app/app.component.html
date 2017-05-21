@@ -7,11 +7,10 @@
 
   </div>
   <div id="middle">
-    <h1>Inactive</h1>
-    <app-tasks></app-tasks>
+    <h1>Inactive</h1><app-tasks *ngFor ="let inactiveTask of inactiveTasks" [task]=inactiveTask></app-tasks>
   </div>
   <div id="right">
     <h1>Active</h1>
-    <app-tasks *ngFor ="let task of activeTasks" [status]=task.status [name]=task.name></app-tasks>
+    <app-tasks *ngFor ="let activeTask of activeTasks" [task]=activeTask></app-tasks>
   </div>
 

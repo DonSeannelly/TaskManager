@@ -16,6 +16,10 @@
     background-size: 150px 80px;
 }
 
+.form-container{
+    display: none;
+}
+
 li{
     list-style-type: none;
 }
